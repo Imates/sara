@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Teller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- เมนูการนำทาง -->
+    <nav>
+        <ul>
+            <li><a href="#home">หน้าแรก</a></li>
+            <li><a href="#fortune-teller">เริ่มทำนาย</a></li>
+            <li><a href="#about">เกี่ยวกับ</a></li>
+        </ul>
+    </nav>
+
+    <!-- ส่วนหน้าแรก -->
+    <section id="home">
+        <div class="section-content">
+            <h1>ยินดีต้อนรับสู่เว็บไซต์ทำนายดวง</h1>
+            <p>เริ่มต้นทำนายดวงชะตาของคุณผ่านการสุ่มภาพเพื่อรับคำทำนาย!</p>
+        </div>
+    </section>
+
+    <!-- ส่วนทำนายดวง -->
+    <section id="fortune-teller">
+        <div class="section-content">
+            <div class="counter">เหลือ: <span id="remaining-count">3</span> ครั้ง</div>
+            <h2>ทำนายดวงจากภาพ</h2>
+            <div class="image-container">
+                <img id="fortune-image" src="placeholder.jpg" alt="Your fortune will appear here" />
+            </div>
+            <button id="fortune-button" onclick="generateFortuneImage()">รับคำทำนายจากภาพ</button>
+            <button id="description-button" onclick="showDescription()" disabled>ดูคำอธิบาย</button>
+            <p id="description-text"></p>
+        </div>
+    </section>
+
+    <!-- ส่วนเกี่ยวกับ -->
+    <section id="about">
+        <div class="section-content">
+            <h2>เกี่ยวกับเว็บไซต์</h2>
+            <p>เว็บไซต์นี้ถูกสร้างขึ้นเพื่อให้คุณได้สนุกกับการทำนายดวงชะตาผ่านภาพสุ่มที่มีคำทำนายที่น่าตื่นเต้นและแม่นยำ</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
